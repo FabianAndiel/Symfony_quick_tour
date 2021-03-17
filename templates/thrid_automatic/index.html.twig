@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+<p> neuer Twig {{d}}</p>
+<p>  der Benutzer heisst {{user.firstname}} </p>
+
+<ul>
+    {% for day in weekdays %}
+        <li>{{ day}}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
